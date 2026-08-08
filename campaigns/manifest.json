@@ -3,9 +3,27 @@
   "created": "2026-08-08",
   "gallery_url": "https://claude.ai/code/artifact/b9bfa246-66e0-4b77-9b58-ea5880fcd9cb",
   "avatar": {
-    "status": "awaiting_photos",
+    "status": "ingest_blocked_2_of_20",
+    "character_name": "Mandon",
+    "character_type": "soul_2",
     "character_id": null,
-    "reference_media_ids": [],
+    "reference_media_ids": [
+      "2b88e0db-53b3-43db-b9f8-63fa9662d506",
+      "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03"
+    ],
+    "reference_media_files": {
+      "7107.jpg": "2b88e0db-53b3-43db-b9f8-63fa9662d506",
+      "7108.jpg": "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03"
+    },
+    "pending_upload_slots": "scripts/.file-to-media-id.json (18 files; PUT via scripts/hf-upload-local.sh, then media_confirm type=image)",
+    "calibration": {
+      "quoted": "2026-08-08",
+      "batch": "6x Soul 2.0 stills, 9:16, 2k, varied scenes",
+      "cost_per_image_credits_exact": 0.12,
+      "batch_cost_credits_exact": 0.72,
+      "approved": null,
+      "picks": []
+    },
     "locked_at": null
   },
   "defaults": {

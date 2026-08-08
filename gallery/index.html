@@ -161,6 +161,43 @@
   }
   .step p strong { color: var(--bone); font-weight: 600; }
 
+  /* Avatar pipeline */
+  .pipeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .ppl-row {
+    display: grid;
+    grid-template-columns: 26px 1fr auto;
+    gap: 14px;
+    align-items: baseline;
+    padding: 14px 18px;
+  }
+  .ppl-row + .ppl-row { border-top: 1px solid var(--line); }
+  .ppl-mark {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 17px;
+    color: var(--brass);
+  }
+  .ppl-row.done .ppl-mark { color: var(--brass); }
+  .ppl-row.hold .ppl-mark { color: var(--amber); }
+  .ppl-row.next .ppl-mark { color: var(--muted); }
+  .ppl-name { font-size: 14.5px; }
+  .ppl-name small { display: block; color: var(--muted); font-size: 12.5px; }
+  .ppl-state {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .ppl-row.done .ppl-state { color: var(--brass); }
+  .ppl-row.hold .ppl-state { color: var(--amber); }
+
   /* Campaigns — empty state */
   .empty {
     border: 1px solid var(--line);
@@ -206,18 +243,44 @@
   <section class="status" aria-label="Studio status">
     <div class="stat">
       <span class="stat-label">Avatar</span>
-      <span class="stat-value"><span class="dot"></span>Pending</span>
-      <span class="stat-note">Awaiting your photos</span>
+      <span class="stat-value"><span class="dot"></span>In&nbsp;setup</span>
+      <span class="stat-note">20 refs curated · 2 ingested</span>
     </div>
     <div class="stat">
       <span class="stat-label">Credits</span>
       <span class="stat-value">797.5</span>
-      <span class="stat-note">Higgsfield · Plus</span>
+      <span class="stat-note">Higgsfield · Plus · 0 spent</span>
     </div>
     <div class="stat">
       <span class="stat-label">Campaigns</span>
       <span class="stat-value">0</span>
       <span class="stat-note">Rack is empty</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Avatar — “Mandon”</h2>
+    <div class="pipeline" aria-label="Avatar training pipeline">
+      <div class="ppl-row done">
+        <span class="ppl-mark">✓</span>
+        <span class="ppl-name">Reference set curated<small>20 likeness photos, cropped &amp; verified</small></span>
+        <span class="ppl-state">Done</span>
+      </div>
+      <div class="ppl-row hold">
+        <span class="ppl-mark">◌</span>
+        <span class="ppl-name">Upload to Higgsfield<small>2 of 20 in — the studio’s network door needs one approval to pass the rest</small></span>
+        <span class="ppl-state">On hold</span>
+      </div>
+      <div class="ppl-row next">
+        <span class="ppl-mark">·</span>
+        <span class="ppl-name">Train Soul character<small>Soul 2.0 identity, ~10 minutes once refs are in</small></span>
+        <span class="ppl-state">Next</span>
+      </div>
+      <div class="ppl-row next">
+        <span class="ppl-mark">·</span>
+        <span class="ppl-name">Calibration &amp; lock<small>6 test stills quoted at 0.72 credits — you pick the truest 1–2</small></span>
+        <span class="ppl-state">Quoted</span>
+      </div>
     </div>
   </section>
 
