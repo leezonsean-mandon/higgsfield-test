@@ -3,7 +3,7 @@
   "created": "2026-08-08",
   "gallery_url": "https://claude.ai/code/artifact/b9bfa246-66e0-4b77-9b58-ea5880fcd9cb",
   "avatar": {
-    "status": "retraining_v2_on_originals",
+    "status": "v2_trained_awaiting_likeness_verdict",
     "character_name": "Mandon",
     "character_type": "soul_2",
     "ingest_route": "media_import_url during Mandon-approved temporary public-repo window, 2026-08-08",
@@ -111,6 +111,12 @@
         "IMG_7921.jpeg": "cc679ed4-c2b7-46e6-8d86-81380a060a9d",
         "5A545C2B-158B-48C6-8020-C93958DE46AA.jpeg": "ee016671-f1c8-4c25-9b8f-9eb879ebe169",
         "IMG_9962.jpeg": "1b6243e2-5172-4175-8a94-cb716f8d64a5"
+      },
+      "training_completed": "2026-08-08T17:17Z",
+      "training_fee_credits": 25,
+      "verification_stills": {
+        "soul_only": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_171719_22413319-3e20-4ae8-9562-b417af3aab8b.png",
+        "soul_plus_anchor_IMG_3399": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_171731_b3c47b8f-05ad-4f33-81c1-8c7c5264b837.png"
       }
     }
   },
@@ -127,10 +133,12 @@
   "credits": {
     "plan": "plus",
     "balance_at_setup": 797.5,
-    "last_known_balance": 771.78,
+    "last_known_balance": 746.3,
     "spent_to_date": {
       "soul_training": 25,
-      "calibration_batch": 0.72
+      "calibration_batch": 0.72,
+      "soul_training_v2": 25,
+      "diagnostics": 0.48
     }
   },
   "campaigns": []

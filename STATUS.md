@@ -38,7 +38,8 @@ media_import_url (map in manifest avatar.v2). Character "Mandon v2"
 (soul_2) TRAINING, soul_id e17c1292-fc66-4751-9229-6cbe3436b339, 25 cr.
 
 ## NEXT STEP
-1. Poll show_characters status → ready (~10 min from 16:55Z).
+1. DONE: v2 trained 17:17Z (25 cr, balance 746.30). Verification stills
+   generated — awaiting Mandon verdict.
 2. Verify: 2 test stills (soul-only + soul + IMG_3399 anchor, 0.24) →
    Mandon judges.
 3. If likeness lands: 6-still calibration (0.72) → Mandon picks 1–2 →
