@@ -31,19 +31,17 @@ reference) ~60% — trained identity is weak; screenshots + IG chrome blamed.
 Cleaned v2 refs built (avatar/refs_v2/, badges patched, bars cropped) as
 fallback. DECISION: Mandon is resending all 20 as ORIGINAL photos.
 
-## NEXT STEP (when originals arrive)
-1. Curate originals → commit to avatar/originals/ (keep filenames stable).
-2. Ingest via media_import_url from public-repo raw URLs (proven route;
-   repo must still be public) → record media_ids in manifest.
-3. Retrain: show_characters action=train, name "Mandon v2", type soul_2,
-   20 original media_ids — 25 cr (quoted; restate at kickoff).
-4. Verify: 2 test stills (soul-only + soul+photo-anchor, 0.24). If likeness
-   confirmed → 6-still calibration (0.72) → Mandon picks 1–2 → lock in
-   manifest + gallery. Old soul_id 4a99edd9-… stays recorded as v1.
-5. Then first campaign brief → package + quote → approval → generate.
-NOTE: repo still public — needed for ingest; flip private after retrain.
+## ROUND 2 IN FLIGHT (16:55Z)
+Originals received via GitHub upload (20 files; 1 annotated dupe dropped →
+19 curated, avatar/originals/, commit 7e26919). All 19 ingested via
+media_import_url (map in manifest avatar.v2). Character "Mandon v2"
+(soul_2) TRAINING, soul_id e17c1292-fc66-4751-9229-6cbe3436b339, 25 cr.
 
-Standing decisions: 9:16 default, formats photo_set/cinematic_video/try_on_video,
-manual publishing only, quote before every batch. Balance 772.5 (Plus);
-session spend: 25 credits (Soul ID training fee only — imports and cost
-preflights were free).
+## NEXT STEP
+1. Poll show_characters status → ready (~10 min from 16:55Z).
+2. Verify: 2 test stills (soul-only + soul + IMG_3399 anchor, 0.24) →
+   Mandon judges.
+3. If likeness lands: 6-still calibration (0.72) → Mandon picks 1–2 →
+   record locked look in manifest + gallery.
+4. Then first campaign brief → package + quote → approval → generate.
+Repo can go PRIVATE now — ingest complete, training uses Higgsfield copies.

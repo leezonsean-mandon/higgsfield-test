@@ -3,33 +3,9 @@
   "created": "2026-08-08",
   "gallery_url": "https://claude.ai/code/artifact/b9bfa246-66e0-4b77-9b58-ea5880fcd9cb",
   "avatar": {
-    "status": "trained",
+    "status": "retraining_v2_on_originals",
     "character_name": "Mandon",
     "character_type": "soul_2",
-    "character_id": "4a99edd9-e70a-4a3f-98cf-e758dc53f038",
-    "training_started": "2026-08-08T14:47Z",
-    "reference_media_files": {
-      "7107.jpg": "2b88e0db-53b3-43db-b9f8-63fa9662d506",
-      "7108.jpg": "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03",
-      "7109.jpg": "e510ba24-c786-4d20-b59b-b0cf052e501f",
-      "7110.jpg": "f1ae782c-8110-44c1-a900-bb0915fd3b8d",
-      "7111.jpg": "e9fc1d73-e31b-49c7-9d38-e78181c7d1cc",
-      "7113.jpg": "ca63218d-baea-462c-bffb-9957a7120bfc",
-      "7114.jpg": "b8f92dd5-d3c8-41c9-8ae0-45b4fe0a68cd",
-      "7115.jpg": "a824d9ae-e460-4f36-a952-b43d6dff164a",
-      "7116.jpg": "c18ee29a-7964-4a0c-9762-c8bcfd41b910",
-      "7118.jpg": "72651f99-0a96-4eb6-a9c3-79db7eb04ce0",
-      "7119.jpg": "57e924ea-b19c-4ae0-8595-e1000b658417",
-      "7120.jpg": "42bf62d2-377f-4aad-a98a-6e0ae135d0dd",
-      "7122.jpg": "c23a6462-2f3c-45e9-8005-c993cc4a53f0",
-      "7123.jpg": "e71e4072-8ede-440d-81dc-321f22c122b7",
-      "7124.jpg": "f3800d1b-05df-4cec-bd17-bebb5341dabb",
-      "7125.jpg": "da4e0415-a0de-4e49-8830-e372de879bdf",
-      "7127.jpg": "a570a37e-2878-40a1-8b92-34f4c31dcc99",
-      "7128.jpg": "f16ded42-0231-447d-b8a6-d07a75d632e4",
-      "7130.jpg": "fc346d0a-68af-46cb-8ba4-34e767878912",
-      "7132.jpg": "3c410c9f-0522-4aec-ae2e-176958beb48f"
-    },
     "ingest_route": "media_import_url during Mandon-approved temporary public-repo window, 2026-08-08",
     "calibration": {
       "quoted": "2026-08-08",
@@ -77,11 +53,66 @@
           "job_id": "1e588219-4b70-4995-bf13-63a8371f5a25",
           "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_1e588219-4b70-4995-bf13-63a8371f5a25.png"
         }
-      ]
+      ],
+      "note": "v1 calibration set discarded (likeness miss); rerun pending on v2"
     },
     "locked_at": null,
-    "training_completed": "2026-08-08T15:12Z",
-    "training_fee_credits": 25
+    "v1": {
+      "character_id": "4a99edd9-e70a-4a3f-98cf-e758dc53f038",
+      "trained": "2026-08-08T15:12Z",
+      "fee_credits": 25,
+      "verdict": "weak likeness (screenshots); superseded by v2",
+      "reference_media_files": {
+        "7107.jpg": "2b88e0db-53b3-43db-b9f8-63fa9662d506",
+        "7108.jpg": "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03",
+        "7109.jpg": "e510ba24-c786-4d20-b59b-b0cf052e501f",
+        "7110.jpg": "f1ae782c-8110-44c1-a900-bb0915fd3b8d",
+        "7111.jpg": "e9fc1d73-e31b-49c7-9d38-e78181c7d1cc",
+        "7113.jpg": "ca63218d-baea-462c-bffb-9957a7120bfc",
+        "7114.jpg": "b8f92dd5-d3c8-41c9-8ae0-45b4fe0a68cd",
+        "7115.jpg": "a824d9ae-e460-4f36-a952-b43d6dff164a",
+        "7116.jpg": "c18ee29a-7964-4a0c-9762-c8bcfd41b910",
+        "7118.jpg": "72651f99-0a96-4eb6-a9c3-79db7eb04ce0",
+        "7119.jpg": "57e924ea-b19c-4ae0-8595-e1000b658417",
+        "7120.jpg": "42bf62d2-377f-4aad-a98a-6e0ae135d0dd",
+        "7122.jpg": "c23a6462-2f3c-45e9-8005-c993cc4a53f0",
+        "7123.jpg": "e71e4072-8ede-440d-81dc-321f22c122b7",
+        "7124.jpg": "f3800d1b-05df-4cec-bd17-bebb5341dabb",
+        "7125.jpg": "da4e0415-a0de-4e49-8830-e372de879bdf",
+        "7127.jpg": "a570a37e-2878-40a1-8b92-34f4c31dcc99",
+        "7128.jpg": "f16ded42-0231-447d-b8a6-d07a75d632e4",
+        "7130.jpg": "fc346d0a-68af-46cb-8ba4-34e767878912",
+        "7132.jpg": "3c410c9f-0522-4aec-ae2e-176958beb48f"
+      }
+    },
+    "v2": {
+      "character_name": "Mandon v2",
+      "character_type": "soul_2",
+      "character_id": "e17c1292-fc66-4751-9229-6cbe3436b339",
+      "training_started": "2026-08-08T16:55Z",
+      "source": "avatar/originals/ (19 camera originals, commit 7e26919)",
+      "reference_media_files": {
+        "IMG_3399.jpeg": "99357132-92d5-418a-9715-2ede192710d9",
+        "64A31413-D4EB-43FF-9D3F-CCB56B880751.jpeg": "fb56a72d-f328-449c-8fd5-8b09fb0ca299",
+        "93043568-02C8-40B1-B51D-596B82056D0D.jpeg": "29c4832b-e966-4fac-9413-de727ad7ac53",
+        "D41CA114-03B1-4CCB-8FDF-FED1C073D701.jpeg": "e167173a-422e-42a5-841d-3e97971d28b3",
+        "D6CD5128-6154-4EBD-961D-C0571F3D5465.jpeg": "e4707462-1e40-47a3-92de-113cf178a7a6",
+        "IMG_1729.jpeg": "37a93f8d-49ef-4edb-ba66-70cfcbab5672",
+        "IMG_1734.jpeg": "2897128b-8f8f-4acb-8296-f6e0b375f7f5",
+        "IMG_1889.jpeg": "248e5cdf-cb18-4b7c-8570-9075a7fa767a",
+        "IMG_1890.jpeg": "b33d94f5-b03e-4ea9-b8ac-8e2277d1f473",
+        "IMG_2345.jpeg": "21dbe936-573c-4254-9f85-d6af2c777a4c",
+        "IMG_5828.jpeg": "7bdaa291-d977-4b76-b69c-e1cb6a426f0c",
+        "IMG_6705.jpeg": "b5681973-5460-4af1-bf62-02d31a47e24b",
+        "IMG_6706.jpeg": "1ae8f476-0881-4710-a0eb-b926b37c5b5a",
+        "IMG_6708.jpeg": "fd78037b-51a6-4f45-856e-7e98c9affae9",
+        "IMG_6709.jpeg": "75c07cd1-a639-4250-990b-df69ccbb4327",
+        "IMG_6711.jpeg": "63c9964c-be55-4543-9fa8-9cbfeda877b1",
+        "IMG_7921.jpeg": "cc679ed4-c2b7-46e6-8d86-81380a060a9d",
+        "5A545C2B-158B-48C6-8020-C93958DE46AA.jpeg": "ee016671-f1c8-4c25-9b8f-9eb879ebe169",
+        "IMG_9962.jpeg": "1b6243e2-5172-4175-8a94-cb716f8d64a5"
+      }
+    }
   },
   "defaults": {
     "aspect_ratio": "9:16",
