@@ -26,18 +26,22 @@ Mandon: calibration stills "not even close". Verified so far:
 Diagnostics generated (0.24 cr): test A soul-only re-run
 (hf_..._160029_8394f73f...), test B soul + direct photo reference 7107
 (hf_..._160357_1f1381d8...). Balance 771.54.
-DECISIVE CROSS-CHECK (Mandon, free): generate the same portrait from
-character "Mandon" in the Higgsfield WEB app (style off/none if possible).
-Web likeness good → MCP generation path defect (report to Higgsfield; use
-soul+photo-reference or web meanwhile). Web also bad → training weak →
-retrain (25 cr, needs approval) on cleaned refs (crop IG chrome; better:
-original camera photos, not screenshots).
+VERDICT (Mandon, 16:20Z): test A (soul-only) bad, test B (soul + photo
+reference) ~60% — trained identity is weak; screenshots + IG chrome blamed.
+Cleaned v2 refs built (avatar/refs_v2/, badges patched, bars cropped) as
+fallback. DECISION: Mandon is resending all 20 as ORIGINAL photos.
 
-## NEXT STEP (after cross-check)
-1. Resolve likeness per above, re-run calibration, Mandon picks 1–2 → lock.
-2. Then first campaign brief (garment photos/URL + vibe) → package + quote →
-   approval → generate → gallery + manifest.
-NOTE: repo still public at last check — confirm Mandon wants it flipped back.
+## NEXT STEP (when originals arrive)
+1. Curate originals → commit to avatar/originals/ (keep filenames stable).
+2. Ingest via media_import_url from public-repo raw URLs (proven route;
+   repo must still be public) → record media_ids in manifest.
+3. Retrain: show_characters action=train, name "Mandon v2", type soul_2,
+   20 original media_ids — 25 cr (quoted; restate at kickoff).
+4. Verify: 2 test stills (soul-only + soul+photo-anchor, 0.24). If likeness
+   confirmed → 6-still calibration (0.72) → Mandon picks 1–2 → lock in
+   manifest + gallery. Old soul_id 4a99edd9-… stays recorded as v1.
+5. Then first campaign brief → package + quote → approval → generate.
+NOTE: repo still public — needed for ingest; flip private after retrain.
 
 Standing decisions: 9:16 default, formats photo_set/cinematic_video/try_on_video,
 manual publishing only, quote before every batch. Balance 772.5 (Plus);
