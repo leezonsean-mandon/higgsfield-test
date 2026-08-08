@@ -36,8 +36,48 @@
       "batch": "6x Soul 2.0 stills, 9:16, 2k, varied scenes",
       "cost_per_image_credits_exact": 0.12,
       "batch_cost_credits_exact": 0.72,
-      "approved": null,
-      "picks": []
+      "approved": "2026-08-08 (Mandon: 'go')",
+      "picks": [],
+      "generated": "2026-08-08T15:24Z",
+      "billed_credits": 0.72,
+      "stills": [
+        {
+          "n": "01",
+          "scene": "Portrait",
+          "job_id": "8817ec53-0c70-4f07-b130-cea5d1dd16b3",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_8817ec53-0c70-4f07-b130-cea5d1dd16b3.png"
+        },
+        {
+          "n": "02",
+          "scene": "Editorial",
+          "job_id": "0e6b613c-27e9-4e6e-84e2-c8e580e15876",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_0e6b613c-27e9-4e6e-84e2-c8e580e15876.png"
+        },
+        {
+          "n": "03",
+          "scene": "Full body",
+          "job_id": "f3fe42c1-6ce2-4910-a61e-f0fbaf19c9b8",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_f3fe42c1-6ce2-4910-a61e-f0fbaf19c9b8.png"
+        },
+        {
+          "n": "04",
+          "scene": "Profile",
+          "job_id": "e59a22ec-0ed3-41ce-8522-373a0cc99a18",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_e59a22ec-0ed3-41ce-8522-373a0cc99a18.png"
+        },
+        {
+          "n": "05",
+          "scene": "Night neon",
+          "job_id": "4079f778-400e-4d91-ac11-bb8b6af3c8df",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_4079f778-400e-4d91-ac11-bb8b6af3c8df.png"
+        },
+        {
+          "n": "06",
+          "scene": "Candid",
+          "job_id": "1e588219-4b70-4995-bf13-63a8371f5a25",
+          "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_1e588219-4b70-4995-bf13-63a8371f5a25.png"
+        }
+      ]
     },
     "locked_at": null,
     "training_completed": "2026-08-08T15:12Z",
@@ -56,9 +96,10 @@
   "credits": {
     "plan": "plus",
     "balance_at_setup": 797.5,
-    "last_known_balance": 772.5,
+    "last_known_balance": 771.78,
     "spent_to_date": {
-      "soul_training": 25
+      "soul_training": 25,
+      "calibration_batch": 0.72
     }
   },
   "campaigns": []

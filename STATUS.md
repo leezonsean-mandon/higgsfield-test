@@ -16,13 +16,15 @@
 - Gallery artifact updated (same URL, in manifest `gallery_url`).
 
 ## NEXT STEP
-1. On Mandon's calibration approval: 6× Soul 2.0 stills, 9:16, 2k, varied
-   scenes (portrait / editorial waist-up / full-body street / profile /
-   low-light cinematic / natural-light candid) via generate_image_batch with
-   soul_id, then jobs_wait, then ONE show_generation_by_ids. Mandon picks the
-   truest 1–2 → record picks + locked_at in manifest, refresh gallery.
+1. Calibration batch DONE (approved by Mandon, 6 stills rendered 15:24Z,
+   billed exactly 0.72 credits — job ids + URLs in manifest
+   `avatar.calibration.stills`, link cards live in the gallery).
+   AWAITING: Mandon's picks (truest 1–2) → record picks + locked_at in
+   manifest, refresh gallery.
 2. Then first campaign brief (garment photos/URL + vibe) → package + quote →
    approval → generate → gallery + manifest.
+NOTE: repo was flipped public for the ingest window and was still public at
+last check — confirm Mandon flipped it back to private.
 
 Standing decisions: 9:16 default, formats photo_set/cinematic_video/try_on_video,
 manual publishing only, quote before every batch. Balance 772.5 (Plus);

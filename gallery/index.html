@@ -198,6 +198,27 @@
   .ppl-row.done .ppl-state { color: var(--brass); }
   .ppl-row.hold .ppl-state { color: var(--amber); }
 
+  /* Calibration picker */
+  .cal-note { color: var(--muted); font-size: 14.5px; margin: -8px 0 22px; max-width: 58ch; }
+  .cal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 480px) { .cal-grid { grid-template-columns: 1fr; } }
+  .cal-card {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 16px 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.2s ease;
+  }
+  .cal-card:hover { border-color: var(--brass); }
+  .cal-num { font-family: var(--serif); font-style: italic; font-size: 24px; color: var(--brass); }
+  .cal-name { font-size: 14.5px; }
+  .cal-name small { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .cal-view { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+  .cal-card:hover .cal-view { color: var(--brass); }
+
   /* Campaigns — empty state */
   .empty {
     border: 1px solid var(--line);
@@ -248,7 +269,7 @@
     </div>
     <div class="stat">
       <span class="stat-label">Credits</span>
-      <span class="stat-value">772.5</span>
+      <span class="stat-value">771.78</span>
       <span class="stat-note">Higgsfield · Plus</span>
     </div>
     <div class="stat">
@@ -278,9 +299,46 @@
       </div>
       <div class="ppl-row hold">
         <span class="ppl-mark">◌</span>
-        <span class="ppl-name">Calibration &amp; lock<small>6 test stills quoted at 0.72 credits — say go, then pick the truest 1–2</small></span>
-        <span class="ppl-state">Awaiting go</span>
+        <span class="ppl-name">Calibration &amp; lock<small>6 stills rendered for 0.72 credits — pick the truest 1–2 below</small></span>
+        <span class="ppl-state">Pick 1–2</span>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Calibration — pick your look</h2>
+    <p class="cal-note">Six test stills from the trained Soul are ready, 9:16 at 2k. Open each, then reply in chat with the numbers of the truest 1–2 — that becomes the locked look for every campaign.</p>
+    <div class="cal-grid" aria-label="Calibration stills">
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_8817ec53-0c70-4f07-b130-cea5d1dd16b3.png" target="_blank" rel="noopener">
+        <span class="cal-num">01</span>
+        <span class="cal-name">Portrait<small>Face forward, window light, warm-grey backdrop</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_0e6b613c-27e9-4e6e-84e2-c8e580e15876.png" target="_blank" rel="noopener">
+        <span class="cal-num">02</span>
+        <span class="cal-name">Editorial<small>Waist-up, black crewneck, studio softbox</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_f3fe42c1-6ce2-4910-a61e-f0fbaf19c9b8.png" target="_blank" rel="noopener">
+        <span class="cal-num">03</span>
+        <span class="cal-name">Full body<small>Street at dusk, jeans and overshirt</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_e59a22ec-0ed3-41ce-8522-373a0cc99a18.png" target="_blank" rel="noopener">
+        <span class="cal-num">04</span>
+        <span class="cal-name">Profile<small>Shoulders-up, golden-hour side light</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_4079f778-400e-4d91-ac11-bb8b6af3c8df.png" target="_blank" rel="noopener">
+        <span class="cal-num">05</span>
+        <span class="cal-name">Night neon<small>Chest-up, teal and amber glow, film grain</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
+      <a class="cal-card" href="https://d8j0ntlcm91z4.cloudfront.net/user_3GxNucmlzB1ws6KQV7zv3loKFty/hf_20260808_152358_1e588219-4b70-4995-bf13-63a8371f5a25.png" target="_blank" rel="noopener">
+        <span class="cal-num">06</span>
+        <span class="cal-name">Candid<small>Laughing, cafe terrace, documentary feel</small></span>
+        <span class="cal-view">View still →</span>
+      </a>
     </div>
   </section>
 
