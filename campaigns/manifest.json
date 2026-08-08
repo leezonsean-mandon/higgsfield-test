@@ -3,19 +3,34 @@
   "created": "2026-08-08",
   "gallery_url": "https://claude.ai/code/artifact/b9bfa246-66e0-4b77-9b58-ea5880fcd9cb",
   "avatar": {
-    "status": "ingest_blocked_2_of_20",
+    "status": "training",
     "character_name": "Mandon",
     "character_type": "soul_2",
-    "character_id": null,
-    "reference_media_ids": [
-      "2b88e0db-53b3-43db-b9f8-63fa9662d506",
-      "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03"
-    ],
+    "character_id": "4a99edd9-e70a-4a3f-98cf-e758dc53f038",
+    "training_started": "2026-08-08T14:47Z",
     "reference_media_files": {
       "7107.jpg": "2b88e0db-53b3-43db-b9f8-63fa9662d506",
-      "7108.jpg": "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03"
+      "7108.jpg": "b7bf47e9-de5c-45e4-a7c9-baef80a0cc03",
+      "7109.jpg": "e510ba24-c786-4d20-b59b-b0cf052e501f",
+      "7110.jpg": "f1ae782c-8110-44c1-a900-bb0915fd3b8d",
+      "7111.jpg": "e9fc1d73-e31b-49c7-9d38-e78181c7d1cc",
+      "7113.jpg": "ca63218d-baea-462c-bffb-9957a7120bfc",
+      "7114.jpg": "b8f92dd5-d3c8-41c9-8ae0-45b4fe0a68cd",
+      "7115.jpg": "a824d9ae-e460-4f36-a952-b43d6dff164a",
+      "7116.jpg": "c18ee29a-7964-4a0c-9762-c8bcfd41b910",
+      "7118.jpg": "72651f99-0a96-4eb6-a9c3-79db7eb04ce0",
+      "7119.jpg": "57e924ea-b19c-4ae0-8595-e1000b658417",
+      "7120.jpg": "42bf62d2-377f-4aad-a98a-6e0ae135d0dd",
+      "7122.jpg": "c23a6462-2f3c-45e9-8005-c993cc4a53f0",
+      "7123.jpg": "e71e4072-8ede-440d-81dc-321f22c122b7",
+      "7124.jpg": "f3800d1b-05df-4cec-bd17-bebb5341dabb",
+      "7125.jpg": "da4e0415-a0de-4e49-8830-e372de879bdf",
+      "7127.jpg": "a570a37e-2878-40a1-8b92-34f4c31dcc99",
+      "7128.jpg": "f16ded42-0231-447d-b8a6-d07a75d632e4",
+      "7130.jpg": "fc346d0a-68af-46cb-8ba4-34e767878912",
+      "7132.jpg": "3c410c9f-0522-4aec-ae2e-176958beb48f"
     },
-    "pending_upload_slots": "scripts/.file-to-media-id.json (18 files; PUT via scripts/hf-upload-local.sh, then media_confirm type=image)",
+    "ingest_route": "media_import_url during Mandon-approved temporary public-repo window, 2026-08-08",
     "calibration": {
       "quoted": "2026-08-08",
       "batch": "6x Soul 2.0 stills, 9:16, 2k, varied scenes",
