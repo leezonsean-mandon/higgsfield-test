@@ -1,0 +1,23 @@
+{
+  "studio": "Soul Studio",
+  "created": "2026-08-08",
+  "gallery_url": "https://claude.ai/code/artifact/b9bfa246-66e0-4b77-9b58-ea5880fcd9cb",
+  "avatar": {
+    "status": "awaiting_photos",
+    "character_id": null,
+    "reference_media_ids": [],
+    "locked_at": null
+  },
+  "defaults": {
+    "aspect_ratio": "9:16",
+    "formats": ["photo_set", "cinematic_video", "try_on_video"],
+    "publishing": "manual",
+    "credit_policy": "quote_before_batch"
+  },
+  "credits": {
+    "plan": "plus",
+    "balance_at_setup": 797.5,
+    "last_known_balance": 797.5
+  },
+  "campaigns": []
+}

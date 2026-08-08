@@ -1,0 +1,260 @@
+<title>Soul Studio — Ad Gallery</title>
+<style>
+  :root {
+    --ink: #141210;
+    --surface: #1d1a17;
+    --line: #332e28;
+    --bone: #e8e2d6;
+    --muted: #9a9184;
+    --brass: #b9a26b;
+    --amber: #cf9450;
+    --serif: "Didot", "Bodoni 72", "Bodoni MT", "Playfair Display", Georgia, serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  body {
+    background: var(--ink);
+    color: var(--bone);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  a { color: var(--bone); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 3px;
+  }
+
+  /* Masthead */
+  .masthead { text-align: left; }
+  .kicker {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin-bottom: 18px;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(52px, 13vw, 84px);
+    line-height: 0.98;
+    letter-spacing: 0.01em;
+    margin: 0 0 16px;
+    text-wrap: balance;
+  }
+  .wordmark em {
+    font-style: italic;
+    color: var(--brass);
+  }
+  .deck {
+    color: var(--muted);
+    max-width: 42ch;
+    margin: 0;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .masthead { animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: none; }
+    }
+  }
+
+  /* Status strip */
+  .status {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat {
+    padding: 18px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .stat + .stat { border-left: 1px solid var(--line); padding-left: 18px; }
+  .stat-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .stat-value {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--amber);
+    align-self: center;
+    flex: none;
+  }
+  .stat-note { font-size: 12px; color: var(--muted); }
+
+  /* Sections */
+  .section-title {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .section-title::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: var(--line);
+  }
+
+  /* Steps — a true sequence */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 16px;
+  }
+  .step::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 26px;
+    color: var(--brass);
+    line-height: 1.2;
+  }
+  .step h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 21px;
+    margin: 0 0 6px;
+  }
+  .step p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14.5px;
+    max-width: 58ch;
+  }
+  .step p strong { color: var(--bone); font-weight: 600; }
+
+  /* Campaigns — empty state */
+  .empty {
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 48px 28px;
+    text-align: center;
+  }
+  .empty-mark {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 30px;
+    color: var(--brass);
+    margin-bottom: 12px;
+  }
+  .empty p {
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 14.5px;
+    max-width: 34ch;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    letter-spacing: 0.04em;
+  }
+</style>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">Private Gallery · No. 001</div>
+    <h1 class="wordmark">Soul<br /><em>Studio</em></h1>
+    <p class="deck">You as the model. Any brand on the rack. Every campaign lands here — briefed from chat, on phone or desktop.</p>
+  </header>
+
+  <section class="status" aria-label="Studio status">
+    <div class="stat">
+      <span class="stat-label">Avatar</span>
+      <span class="stat-value"><span class="dot"></span>Pending</span>
+      <span class="stat-note">Awaiting your photos</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Credits</span>
+      <span class="stat-value">797.5</span>
+      <span class="stat-note">Higgsfield · Plus</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Campaigns</span>
+      <span class="stat-value">0</span>
+      <span class="stat-note">Rack is empty</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">How a campaign runs</h2>
+    <ol class="steps">
+      <li class="step">
+        <div>
+          <h3>Lock the avatar</h3>
+          <p>One time only. Drop <strong>10–20 photos of yourself</strong> in the chat — face close-ups, waist-up, and at least two full-body. A short calibration pass follows; you pick the truest likeness and it's locked for every campaign after.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div>
+          <h3>Brief the drop</h3>
+          <p>Send <strong>garment photos or a product-page link</strong>, plus the vibe in a line — “quiet luxury, overcast rooftop, film grain.” You get a proposed shot package and a <strong>credit quote before anything generates</strong>.</p>
+        </div>
+      </li>
+      <li class="step">
+        <div>
+          <h3>Approve &amp; collect</h3>
+          <p>Say go. Stills, cinematic cuts and try-on videos render in 9:16 and land on this page with download links — newest first, nothing auto-posted anywhere.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 class="section-title">Campaigns</h2>
+    <div class="empty">
+      <div class="empty-mark">—</div>
+      <p>The rack is empty. The first brief brings this grid to life.</p>
+    </div>
+  </section>
+
+  <footer>
+    <span>Runs on Higgsfield</span>
+    <span>Updated 8 Aug 2026</span>
+  </footer>
+</div>
