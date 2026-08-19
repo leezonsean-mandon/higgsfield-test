@@ -37,9 +37,12 @@ Originals received via GitHub upload (20 files; 1 annotated dupe dropped →
 media_import_url (map in manifest avatar.v2). Character "Mandon v2"
 (soul_2) TRAINING, soul_id e17c1292-fc66-4751-9229-6cbe3436b339, 25 cr.
 
-## NEXT STEP
-1. DONE: v2 trained 17:17Z (25 cr, balance 746.30). Verification stills
-   generated — awaiting Mandon verdict.
+## NEXT STEP — ROUND 3 (Mandon, 17:2xZ): sending a fresh photo batch;
+Claude picks the BEST subset (strict curation: sharp, face-dominant,
+varied angles/expressions), then re-run ingest → retrain (25 cr,
+restate at kickoff) → verify. v2 verdict on its 2 test stills still
+useful to calibrate strategy; if round 3 also lands weak, STOP paying
+and escalate to Higgsfield support with logged job ids/params.
 2. Verify: 2 test stills (soul-only + soul + IMG_3399 anchor, 0.24) →
    Mandon judges.
 3. If likeness lands: 6-still calibration (0.72) → Mandon picks 1–2 →
